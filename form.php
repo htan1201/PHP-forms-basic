@@ -18,7 +18,8 @@
              $_POST['password'],
              $_POST['gender'],
              $_POST['color'],
-             $_POST['languages'],
+             //to access array in multi-selection list
+             implode(' ', $_POST['languages']),
              $_POST['comments'],
              $_POST['tc']);
     }
